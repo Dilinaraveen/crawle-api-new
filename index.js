@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import authRoute from "./routes/auth.js";
 import usersRoute from "./routes/users.js";
 import coursesRoute from "./routes/courses.js";
+import teacherRequestsRoute from "./routes/teacherRequest.js";
 import imageRoute from "./routes/imageRoutes.js"
 import cookieParser from "cookie-parser";
 import cors from 'cors'
@@ -38,6 +39,7 @@ app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/courses", coursesRoute);
 app.use("/api/images", imageRoute);
+app.use("/api/teacherrequests", teacherRequestsRoute);
 
 
 

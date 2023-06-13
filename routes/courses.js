@@ -8,13 +8,7 @@ import {
   getCourses,
   updateCourse,
 } from "../controllers/courseController.js";
-import {
-  verifyAdmin,
-  verifyTeacher,
-  verifyTecherOrAdmin,
-  verifyToken,
-  verifyUser,
-} from "../utils/verifyToken.js";
+
 
 const router = express.Router();
 
